@@ -1,0 +1,171 @@
+================================================================================
+PANDUAN COPYWRITING & MATERI IKLAN GOOGLE ADS + GOOGLE MAPS
+WORKSHOP RESMI: EI RUBY 71 MOTORCYCLE (ARCAMANIK, BANDUNG)
+================================================================================
+
+Website Live Saat Ini : https://saiyan909.github.io/eiruby71-web/
+Rencana Custom Domain : https://eiruby71.com (atau .my.id / .id)
+Kontak WhatsApp       : 0821-2908-2277
+Lokasi Garasi         : Jl. Golf 1 No.94, Cisaranten Kulon, Arcamanik, Bandung
+
+--------------------------------------------------------------------------------
+BAGIAN 1: ISIAN PROFIL GOOGLE MAPS (GOOGLE BISNISKU / GOOGLE BUSINESS PROFILE)
+--------------------------------------------------------------------------------
+Nama Bisnis : Ei ruby 71 MOTORCYCLE
+Kategori    : Bengkel Sepeda Motor / Bengkel Kustom Sepeda Motor (Motorcycle Repair Shop)
+
+[DESKRIPSI TOKO / BISNIS - MAKSIMAL 750 KARAKTER]
+Copy-paste teks di bawah ini ke kolom Deskripsi Profil Google Maps:
+
+Ei ruby 71 MOTORCYCLE adalah bengkel spesialis motor custom, modifikasi chopper & bobber, serta perawatan mesin cruiser V-Twin yang berlokasi di Arcamanik, Bandung. 
+
+Kami menangani spesialisasi Kaisar Ruby V250, SM Sport V16, Benelli Patagonian Eagle/Motobi, Harley Davidson, Keeway, Honda, Yamaha, Kawasaki, QJ Motor, Morbidelli, dan TVS. Layanan kami mencakup:
+- Bangun motor custom dari nol (ground-up build sasis & rangka)
+- Servis besar, overhaul mesin V-Twin & sinkronisasi karbu ganda
+- Fabrikasi part logam manual (tangki peanut, bracket, sissy bar, knalpot custom)
+- Cat premium tahan bensin & pinstripe
+- Restorasi bodi/mesin mobil tua klasik (layanan sampingan)
+
+Pengerjaan teliti, presisi, dan konsultasi ramah langsung di workshop garasi kami.
+
+[ATRIBUT TAMBAHAN UNTUK GOOGLE MAPS]
+- Janji temu online: Ya (via WhatsApp 0821-2908-2277)
+- Layanan di lokasi (Workshop): Ya
+- Parkir: Tersedia area aman di garasi
+- Jam Operasional: Senin - Minggu (08.00 - 18.00 WIB)
+
+
+--------------------------------------------------------------------------------
+BAGIAN 2: KOLOM GOOGLE ADS (RESPONSIVE SEARCH ADS / RSA)
+--------------------------------------------------------------------------------
+Format iklan ini menampilkan kombinasi judul dan deskripsi secara dinamis.
+Semua teks di bawah ini sudah diverifikasi tepat sesuai batasan karakter Google.
+
+A. FINAL URL & DISPLAY PATH:
+- Final URL     : https://saiyan909.github.io/eiruby71-web/  (atau https://eiruby71.com)
+- Display Path 1: custom-motor
+- Display Path 2: bandung
+
+B. HEADLINES / JUDUL IKLAN (Maksimal 30 Karakter Tiap Baris):
+(Isi minimal 5 sampai 8 judul di dashboard Google Ads)
+1. Bengkel Custom Motor Bandung   [28 Karakter]
+2. Spesialis V-Twin & Kaisar Ruby [30 Karakter]
+3. Custom Chopper & Bobber        [23 Karakter]
+4. Bangun Motor Dari Nol          [21 Karakter]
+5. Servis SM V16, Benelli & Moge  [29 Karakter]
+6. Garasi Bengkel Arcamanik       [24 Karakter]
+7. Fabrikasi Part Logam Custom    [27 Karakter]
+8. Konsultasi Proyek WhatsApp     [26 Karakter]
+9. Spesialis Mesin V250 Bandung   [28 Karakter]
+10. Cat Custom Mewah Anti Bensin  [28 Karakter]
+
+C. DESCRIPTIONS / DESKRIPSI IKLAN (Maksimal 90 Karakter Tiap Baris):
+(Isi ke-4 baris deskripsi di dashboard Google Ads)
+Baris 1 [89 Karakter]:
+Bengkel motor custom chopper & bobber di Arcamanik Bandung. Spesialis V-Twin & fabrikasi.
+
+Baris 2 [86 Karakter]:
+Servis mesin V250 Kaisar Ruby, SM V16, Benelli & moge. Pengerjaan teliti & bergaransi.
+
+Baris 3 [90 Karakter]:
+Bangun motor impian dari nol, rangka custom, knalpot blar, cat mewah, & sedia part langka.
+
+Baris 4 [90 Karakter]:
+Konsultasi gratis langsung via WhatsApp atau mampir ke workshop kami di Arcamanik Bandung.
+
+
+--------------------------------------------------------------------------------
+BAGIAN 3: TARGET KEYWORDS (KATA KUNCI PENCARIAN)
+--------------------------------------------------------------------------------
+Copy-paste daftar berikut ke bagian "Keywords" di kampanye iklan. Tanda petik dua ("")
+berarti Phrase Match agar iklan hanya muncul pada pencarian yang relevan.
+
+"bengkel custom motor bandung"
+"bengkel motor custom terdekat"
+"bengkel kaisar ruby bandung"
+"bengkel sm sport v16"
+"bengkel sm v16 bandung"
+"bengkel chopper bandung"
+"bengkel bobber bandung"
+"bengkel v twin bandung"
+"bengkel benelli patagonian eagle bandung"
+"custom knalpot moge bandung"
+"bikin rangka motor custom"
+"fabrikasi tangki motor custom"
+"bengkel modifikasi motor arcamanik"
+"bangun motor dari nol bandung"
+"spesialis mesin kaisar ruby"
+
+
+--------------------------------------------------------------------------------
+BAGIAN 4: EKSTENSI & ASET IKLAN (ASSETS)
+--------------------------------------------------------------------------------
+1. Ekstensi Panggilan (Call Asset):
+   Nomor: +62 821-2908-2277
+
+2. Ekstensi Lokasi (Location Asset):
+   Hubungkan kampanye Google Ads ke akun Google Profil Bisnis "Ei ruby 71 MOTORCYCLE".
+
+3. Sitelink Assets (Tautan Tambahan di Bawah Iklan):
+   - Sitelink 1:
+     Teks Link   : 11 Merk Motor Resmi
+     Deskripsi 1 : Layanan Kaisar Ruby, SM V16, Moge
+     Deskripsi 2 : Spesialis servis & suku cadang
+     URL Tujuan  : https://saiyan909.github.io/eiruby71-web/#merk-motor
+
+   - Sitelink 2:
+     Teks Link   : Bikin Motor Dari Nol
+     Deskripsi 1 : Rancang sasis & geometri custom
+     Deskripsi 2 : Karya eksklusif chopper & bobber
+     URL Tujuan  : https://saiyan909.github.io/eiruby71-web/#layanan
+
+   - Sitelink 3:
+     Teks Link   : Video Liputan Garasi
+     Deskripsi 1 : Tonton suasana pengerjaan bengkel
+     Deskripsi 2 : Dokumentasi YouTube workshop kami
+     URL Tujuan  : https://saiyan909.github.io/eiruby71-web/#video-porto
+
+   - Sitelink 4:
+     Teks Link   : Rute Lokasi Arcamanik
+     Deskripsi 1 : Garasi resmi di Cisaranten Kulon
+     Deskripsi 2 : Petunjuk arah via Google Maps
+     URL Tujuan  : https://saiyan909.github.io/eiruby71-web/#lokasi
+
+
+--------------------------------------------------------------------------------
+BAGIAN 5: PANDUAN SETTING TARGET LOKASI & ANGGARAN
+--------------------------------------------------------------------------------
+1. Target Lokasi (Location Targeting):
+   - Kota Bandung (Target Utama)
+   - Kota Cimahi & Kabupaten Bandung (Radius 25-30 km dari Arcamanik)
+   - Opsional: Seluruh Jawa Barat & Jabodetabek (khusus proyek bangun motor dari nol)
+
+2. Waktu Penayangan Iklan (Ad Schedule):
+   - Setiap hari: 08.00 - 21.00 WIB (fokus saat orang aktif mencari bengkel & luang WhatsApp)
+
+3. Rekomendasi Budget Harian Awal:
+   - Rp 25.000 - Rp 50.000 / hari sudah sangat cukup untuk menjaring pelanggan lokal di Bandung.
+
+
+================================================================================
+PANDUAN MENGGANTI DOMAIN JADI eiruby71.com (CUSTOM DOMAIN)
+================================================================================
+Jika nanti kamu atau om kamu sudah membeli domain (misal: eiruby71.com atau eiruby71.my.id):
+
+1. Masuk ke dashboard penyedia domain (Niagahoster / Domainesia / Rumahweb / Namecheap).
+2. Masuk ke menu "DNS Management" pada domain tersebut.
+3. Tambahkan 4 buah DNS A-Record ke IP GitHub Pages berikut:
+   Type: A  |  Host: @  |  Value: 185.199.108.153
+   Type: A  |  Host: @  |  Value: 185.199.109.153
+   Type: A  |  Host: @  |  Value: 185.199.110.153
+   Type: A  |  Host: @  |  Value: 185.199.111.153
+
+4. Tambahkan 1 buah CNAME Record untuk www:
+   Type: CNAME  |  Host: www  |  Value: saiyan909.github.io
+
+5. Di repo GitHub:
+   Buka Settings -> Pages -> Custom domain -> masukkan `eiruby71.com` -> Klik Save.
+   Centang pilihan "Enforce HTTPS".
+
+Selesai! Web akan otomatis beralih menjadi https://eiruby71.com tanpa biaya hosting selamanya.
+================================================================================
