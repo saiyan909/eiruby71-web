@@ -1,0 +1,1090 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ei ruby 71 MOTORCYCLE - Custom & Cruiser Workshop Bandung</title>
+  <meta name="description" content="Ei ruby 71 MOTORCYCLE: Bengkel Spesialis Custom Chopper, Bobber, Mesin V-Twin Cruiser, Fabrikasi Part, dan Bangun Motor Dari Nol di Arcamanik, Bandung.">
+  <meta name="theme-color" content="#0b0b0e">
+
+  <!-- Favicons -->
+  <link rel="icon" type="image/svg+xml" href="assets/logo/favicon.svg">
+  <link rel="alternate icon" href="favicon.ico">
+
+  <!-- OpenGraph / Social Media (WhatsApp, IG, Twitter) -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Ei ruby 71 MOTORCYCLE - Custom & Cruiser Workshop Bandung">
+  <meta property="og:description" content="Bengkel Spesialis Custom Chopper, Bobber, Mesin V-Twin Cruiser, Fabrikasi Part, dan Bangun Motor Dari Nol di Arcamanik, Bandung.">
+  <meta property="og:image" content="assets/img/banner-rework.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Ei ruby 71 MOTORCYCLE - Custom & Cruiser Workshop Bandung">
+  <meta name="twitter:description" content="Bengkel Spesialis Custom Chopper, Bobber, Mesin V-Twin Cruiser, Fabrikasi Part, dan Bangun Motor Dari Nol di Arcamanik, Bandung.">
+  <meta name="twitter:image" content="assets/img/banner-rework.jpg">
+
+  <!-- Google Fonts: Syne, Outfit, Cinzel -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Syne:wght@700;800;900&family=Cinzel:wght@700;800;900&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Phosphor Icons CDN -->
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brandYellow: '#f59e0b',
+            brandYellowLight: '#fbbf24',
+            brandOrange: '#d97706',
+            darkBase: '#0b0b0e',
+            darkSurface: '#131318',
+            darkSurfaceBorder: '#23232c',
+            darkElevated: '#1b1b22'
+          },
+          fontFamily: {
+            heading: ['Syne', 'sans-serif'],
+            body: ['Outfit', 'sans-serif'],
+            classic: ['Cinzel', 'serif']
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body {
+      font-family: 'Outfit', sans-serif;
+      background-color: #0b0b0e;
+      color: #e2e8f0;
+      overflow-x: hidden;
+    }
+    .font-heading { font-family: 'Syne', sans-serif; }
+    .font-classic { font-family: 'Cinzel', serif; }
+    
+    .gold-gradient {
+      background: linear-gradient(135deg, #fef08a 0%, #f59e0b 50%, #d97706 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .glow-amber {
+      box-shadow: 0 0 50px -10px rgba(245, 158, 11, 0.35);
+    }
+    
+    .card-transition {
+      transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .card-transition:hover {
+      transform: translateY(-4px);
+      border-color: #f59e0b;
+      box-shadow: 0 12px 30px -10px rgba(245, 158, 11, 0.2);
+    }
+
+    /* INTERACTIVE RECEDING BANNER BACKGROUND */
+    #interactive-banner-container {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      z-index: 0;
+      pointer-events: none;
+      overflow: hidden;
+    }
+
+    #interactive-banner-img {
+      width: 100%;
+      height: 100%;
+      background-image: url('assets/img/banner-rework.jpg');
+      background-size: cover;
+      background-position: center top;
+      background-repeat: no-repeat;
+      will-change: transform, filter;
+      transform-origin: center 20%;
+      transition: transform 0.12s ease-out, filter 0.12s ease-out;
+    }
+
+    #interactive-banner-overlay {
+      position: absolute;
+      inset: 0;
+      background-color: #0b0b0e;
+      will-change: opacity;
+      transition: opacity 0.12s ease-out;
+    }
+
+    /* TRANSPARENT LOGO BADGE */
+    .brand-glass-badge {
+      background: rgba(19, 19, 24, 0.85);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .brand-glass-badge:hover {
+      background: rgba(27, 27, 34, 0.95);
+      border-color: rgba(245, 158, 11, 0.6);
+      transform: translateY(-3px) scale(1.03);
+      box-shadow: 0 10px 25px -5px rgba(245, 158, 11, 0.25);
+    }
+  </style>
+</head>
+<body class="selection:bg-brandYellow selection:text-black relative bg-darkBase">
+
+  <!-- =================================================================== -->
+  <!-- FIXED INTERACTIVE BANNER BACKGROUND (MUNDUR KE BELAKANG SAAT SCROLL) -->
+  <!-- =================================================================== -->
+  <div id="interactive-banner-container" aria-hidden="true">
+    <div id="interactive-banner-img"></div>
+    <div id="interactive-banner-overlay" style="opacity: 0;"></div>
+    <!-- Soft Vignette & Depth Shadow -->
+    <div class="absolute inset-0 bg-gradient-to-t from-darkBase via-transparent to-black/50 pointer-events-none"></div>
+  </div>
+
+  <!-- TOP LOCATION BAR -->
+  <div class="bg-gradient-to-r from-amber-600 via-amber-500 to-amber-600 text-black text-xs font-black py-2 px-4 text-center tracking-wider flex items-center justify-center gap-2 shadow-md relative z-50">
+    <i class="ph-bold ph-wrench text-base"></i>
+    <span>EI RUBY 71 MOTORCYCLE • WORKSHOP GARASI RESMI ARCAMANIK BANDUNG</span>
+    <span class="hidden md:inline">• WA: 0821-2908-2277</span>
+  </div>
+
+  <!-- NAVIGATION -->
+  <header class="sticky top-0 z-40 bg-darkBase/90 backdrop-blur-md border-b border-darkSurfaceBorder">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between gap-4">
+      
+      <!-- HEADER LOGO COMPACT -->
+      <a href="#step1-banner" class="shrink-0 flex items-center gap-2.5 sm:gap-3 group">
+        <div class="w-11 h-11 rounded-xl bg-gradient-to-br from-brandYellow to-brandOrange p-0.5 shadow-lg shadow-brandYellow/20 group-hover:scale-105 transition-transform shrink-0">
+          <div class="w-full h-full bg-darkBase rounded-[10px] flex items-center justify-center font-black text-brandYellow text-xl font-heading tracking-tighter">
+            Ei
+          </div>
+        </div>
+        <div class="flex flex-col shrink-0">
+          <div class="flex items-baseline gap-1">
+            <span class="text-white font-extrabold text-xl tracking-tight font-classic">ruby</span>
+            <span class="text-brandYellow font-black text-2xl font-heading tracking-tighter">71</span>
+          </div>
+          <span class="text-[8px] tracking-[0.25em] font-black uppercase text-zinc-400 -mt-1">MOTORCYCLE</span>
+        </div>
+      </a>
+
+      <!-- Desktop Menu -->
+      <nav class="hidden lg:flex items-center gap-4 xl:gap-7 text-xs xl:text-sm font-bold text-zinc-300">
+        <a href="#step1-banner" class="text-brandYellow transition-colors">Home</a>
+        <a href="#step2-profil" class="hover:text-brandYellow transition-colors whitespace-nowrap">Profil & Merk Motor</a>
+        <a href="#layanan" class="hover:text-brandYellow transition-colors whitespace-nowrap">Layanan Workshop</a>
+        <a href="#video-porto" class="hover:text-brandYellow transition-colors whitespace-nowrap">Video & Galeri</a>
+        <a href="#lokasi" class="hover:text-brandYellow transition-colors whitespace-nowrap">Lokasi Bengkel</a>
+      </nav>
+
+      <!-- Fast Action CTA -->
+      <div class="hidden sm:flex items-center gap-3 shrink-0">
+        <a href="https://wa.me/6282129082277?text=Halo%20Om%20Eiruby71,%20saya%20mau%20konsultasi%20motor" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 bg-gradient-to-r from-brandYellow to-brandOrange text-black font-extrabold px-5 py-2.5 rounded-xl text-sm shadow-md hover:brightness-110 active:scale-95 transition-all whitespace-nowrap">
+          <i class="ph-bold ph-whatsapp-logo text-lg"></i>
+          <span>Chat WhatsApp</span>
+        </a>
+      </div>
+
+      <!-- Mobile Hamburger -->
+      <button id="mobileToggle" aria-label="Toggle Menu" class="lg:hidden text-zinc-300 hover:text-white p-2 shrink-0">
+        <i class="ph-bold ph-list text-2xl"></i>
+      </button>
+    </div>
+
+    <!-- Mobile Drawer -->
+    <div id="mobileDrawer" class="hidden lg:hidden bg-darkSurface border-b border-darkSurfaceBorder px-6 py-6 space-y-4">
+      <a href="#step1-banner" class="block text-brandYellow font-bold py-1">Home</a>
+      <a href="#step2-profil" class="block text-zinc-200 font-bold py-1 hover:text-brandYellow">Profil & 11 Merk Motor</a>
+      <a href="#layanan" class="block text-zinc-200 font-bold py-1 hover:text-brandYellow">Layanan Lengkap Workshop</a>
+      <a href="#video-porto" class="block text-zinc-200 font-bold py-1 hover:text-brandYellow">Video & Galeri Workshop</a>
+      <a href="#lokasi" class="block text-zinc-200 font-bold py-1 hover:text-brandYellow">Lokasi & Kontak</a>
+      <a href="https://wa.me/6282129082277?text=Halo%20Om%20Eiruby71,%20saya%20mau%20konsultasi%20motor" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center gap-2 w-full bg-brandYellow text-black font-extrabold py-3 rounded-xl text-sm">
+        <i class="ph-bold ph-whatsapp-logo text-xl"></i>
+        <span>Chat WhatsApp Om (0821-2908-2277)</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- =================================================================== -->
+  <!-- STEP 1: SETIAP KALI USER BUKA WEB, HARUS MUNCUL BANNER INI AJA DULU -->
+  <!-- Full viewport height (100vh), clean, without any overlapping text!  -->
+  <!-- =================================================================== -->
+  <section id="step1-banner" class="relative z-10 w-full h-[calc(100vh-5rem)] min-h-[500px] flex flex-col justify-end items-center px-4 py-8 pointer-events-none">
+    
+    <!-- Center is pure clean banner artwork - zero text overlap! -->
+    <div class="my-auto"></div>
+
+    <!-- Bottom Scroll Indicator (Pintu masuk ke Step 2) -->
+    <div id="scroll-prompt" class="pointer-events-auto text-center pb-3 transition-opacity duration-300">
+      <a href="#step2-profil" class="inline-flex flex-col items-center gap-2 px-6 py-3 rounded-2xl bg-black/85 hover:bg-black/95 backdrop-blur-md border border-brandYellow/60 text-white hover:text-brandYellow shadow-2xl group transition-all">
+        <span class="text-xs sm:text-sm font-black tracking-widest uppercase text-brandYellow flex items-center gap-2">
+          <span>Scroll ke bawah untuk eksplorasi workshop</span>
+          <i class="ph-bold ph-arrow-down text-base animate-bounce"></i>
+        </span>
+        <span class="text-[10px] text-zinc-400 group-hover:text-zinc-200">
+          Lihat Profil Bengkel, 11 Merk Motor Resmi & Layanan Custom
+        </span>
+      </a>
+    </div>
+
+  </section>
+
+  <!-- =================================================================== -->
+  <!-- STEP 2: SETELAH SCROLL KE BAWAH, BARULAH MUNCUL TULISAN MACAM-MACAM -->
+  <!-- Profil Branding Raksasa, 11 Merk Motor Real, dan Tombol Aksi        -->
+  <!-- =================================================================== -->
+  <section id="step2-profil" class="relative z-20 py-24 bg-darkBase/95 backdrop-blur-2xl border-t border-brandYellow/30 shadow-[0_-30px_60px_rgba(0,0,0,0.95)]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+      
+      <!-- 1. GIANT BRANDING TYPOGRAPHY -->
+      <div class="text-center space-y-4">
+        
+        <div class="flex flex-wrap items-center justify-center gap-3 mb-2">
+          <span class="px-3.5 py-1 rounded-full bg-brandYellow/15 border border-brandYellow/40 text-brandYellow text-xs font-black uppercase tracking-wider">
+            Custom Workshop & Specialty Engine
+          </span>
+          <span class="px-3 py-1 rounded-full bg-darkElevated border border-darkSurfaceBorder text-zinc-400 text-xs font-medium">
+            <i class="ph-bold ph-car text-amber-500 mr-1"></i> Juga menerima restorasi mobil tua / klasik (opsional)
+          </span>
+        </div>
+
+        <!-- BIG LOGO DISPLAY -->
+        <div class="inline-flex items-center justify-center gap-4 sm:gap-6 flex-wrap">
+          <div class="w-16 h-16 sm:w-24 sm:h-24 md:w-28 md:h-28 rounded-2xl sm:rounded-3xl bg-gradient-to-br from-brandYellow to-brandOrange p-1 shadow-2xl shadow-brandYellow/40">
+            <div class="w-full h-full bg-darkBase rounded-[14px] sm:rounded-[22px] flex items-center justify-center font-black text-brandYellow text-4xl sm:text-5xl md:text-6xl font-heading tracking-tighter">
+              Ei
+            </div>
+          </div>
+          <div class="flex items-baseline">
+            <span class="text-white font-extrabold text-5xl sm:text-7xl md:text-8xl lg:text-9xl font-classic tracking-tight">ruby</span>
+            <span class="text-brandYellow font-black text-6xl sm:text-8xl md:text-9xl lg:text-[10rem] font-heading ml-2 tracking-tighter">71</span>
+          </div>
+        </div>
+        
+        <div class="text-xs sm:text-base md:text-xl font-black uppercase text-zinc-200 tracking-[0.4em] sm:tracking-[0.7em] pt-1">
+          MOTORCYCLE WORKSHOP
+        </div>
+
+        <p class="text-zinc-300 text-sm sm:text-lg max-w-3xl mx-auto pt-2 font-normal leading-relaxed">
+          Spesialis Motor Cruiser V-Twin, Custom Chopper & Bobber, Servis Mesin, Fabrikasi Part, hingga Bangun Motor dari Nol di Arcamanik Bandung.
+        </p>
+
+        <!-- CTA Buttons -->
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
+          <a href="https://wa.me/6282129082277?text=Halo%20Om%20Eiruby71,%20saya%20mau%20konsultasi%20proyek%20motor" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-gradient-to-r from-brandYellow to-brandOrange text-black font-black px-9 py-4 rounded-xl text-base shadow-2xl shadow-brandYellow/40 hover:brightness-110 active:scale-95 transition-all">
+            <i class="ph-fill ph-whatsapp-logo text-2xl"></i>
+            <span>Konsultasi Proyek (0821-2908-2277)</span>
+          </a>
+          <a href="#layanan" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-darkElevated hover:bg-darkSurface border border-brandYellow/40 text-brandYellow font-bold px-7 py-4 rounded-xl text-base transition-all">
+            <i class="ph-bold ph-wrench text-lg"></i>
+            <span>Lihat Layanan Workshop</span>
+          </a>
+          <a href="#lokasi" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-darkElevated hover:bg-darkSurface border border-darkSurfaceBorder text-zinc-200 font-bold px-6 py-4 rounded-xl text-base transition-all">
+            <i class="ph-bold ph-map-pin text-brandYellow text-lg"></i>
+            <span>Lokasi Arcamanik</span>
+          </a>
+        </div>
+
+      </div>
+
+      <!-- 2. 11 MERK MOTOR REAL TRANSPARAN DI STEP 2 -->
+      <div id="merk-motor" class="pt-10 border-t border-darkSurfaceBorder">
+        <div class="text-center max-w-2xl mx-auto mb-10">
+          <span class="text-brandYellow text-xs font-black tracking-widest uppercase mb-1 block">Dukungan Multi-Brand Resmi</span>
+          <h2 class="text-2xl sm:text-3xl font-black font-heading text-white">11 Merk Motor Layanan Service Kami</h2>
+          <p class="text-zinc-400 text-xs sm:text-sm mt-1">Logo resmi merk motor yang kami tangani di workshop Eiruby 71:</p>
+        </div>
+
+        <!-- 11 Logo Bar (Klik untuk Konsultasi WhatsApp per Merk) -->
+        <div class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-11 gap-3">
+          
+          <!-- 1. Kaisar Ruby -->
+          <a href="https://wa.me/6282129082277?text=Halo%20Om%20Ei,%20saya%20ada%20motor%20Kaisar%20Ruby%20saya%20mau%20" target="_blank" rel="noopener noreferrer" class="p-3 rounded-2xl brand-glass-badge border border-darkSurfaceBorder hover:border-brandYellow flex flex-col items-center justify-between text-center group cursor-pointer active:scale-95 transition-all">
+            <div class="w-14 h-12 flex items-center justify-center mb-1">
+              <img src="assets/logo/clean/kaisar_transparent.png" alt="Logo Kaisar Ruby" class="max-w-full max-h-full object-contain filter drop-shadow-md group-hover:scale-110 transition-transform" />
+            </div>
+            <span class="text-[10px] font-black text-zinc-300 group-hover:text-brandYellow uppercase tracking-tight">Kaisar Ruby</span>
+          </a>
+
+          <!-- 2. SM V16 -->
+          <a href="https://wa.me/6282129082277?text=Halo%20Om%20Ei,%20saya%20ada%20motor%20SM%20V16%20saya%20mau%20" target="_blank" rel="noopener noreferrer" class="p-3 rounded-2xl brand-glass-badge border border-darkSurfaceBorder hover:border-brandYellow flex flex-col items-center justify-between text-center group cursor-pointer active:scale-95 transition-all">
+            <div class="w-14 h-12 flex items-center justify-center mb-1">
+              <img src="assets/logo/clean/sm_transparent.png" alt="Logo SM V16" class="max-w-full max-h-full object-contain filter drop-shadow-md group-hover:scale-110 transition-transform" />
+            </div>
+            <span class="text-[10px] font-black text-zinc-300 group-hover:text-brandYellow uppercase tracking-tight">SM V16</span>
+          </a>
+
+          <!-- 3. Benelli -->
+          <a href="https://wa.me/6282129082277?text=Halo%20Om%20Ei,%20saya%20ada%20motor%20Benelli%20saya%20mau%20" target="_blank" rel="noopener noreferrer" class="p-3 rounded-2xl brand-glass-badge border border-darkSurfaceBorder hover:border-brandYellow flex flex-col items-center justify-between text-center group cursor-pointer active:scale-95 transition-all">
+            <div class="w-14 h-12 flex items-center justify-center mb-1">
+              <img src="assets/logo/clean/benelli_transparent.png" alt="Logo Benelli" class="max-w-full max-h-full object-contain filter drop-shadow-md group-hover:scale-110 transition-transform" />
+            </div>
+            <span class="text-[10px] font-black text-zinc-300 group-hover:text-brandYellow uppercase tracking-tight">Benelli</span>
+          </a>
+
+          <!-- 4. Harley Davidson -->
+          <a href="https://wa.me/6282129082277?text=Halo%20Om%20Ei,%20saya%20ada%20motor%20Harley%20Davidson%20saya%20mau%20" target="_blank" rel="noopener noreferrer" class="p-3 rounded-2xl brand-glass-badge border border-darkSurfaceBorder hover:border-brandYellow flex flex-col items-center justify-between text-center group cursor-pointer active:scale-95 transition-all">
+            <div class="w-14 h-12 flex items-center justify-center mb-1">
+              <img src="assets/logo/clean/harley_transparent.png" alt="Logo Harley Davidson" class="max-w-full max-h-full object-contain filter drop-shadow-md group-hover:scale-110 transition-transform" />
+            </div>
+            <span class="text-[10px] font-black text-zinc-300 group-hover:text-brandYellow uppercase tracking-tight">Harley-D</span>
+          </a>
+
+          <!-- 5. Keeway -->
+          <a href="https://wa.me/6282129082277?text=Halo%20Om%20Ei,%20saya%20ada%20motor%20Keeway%20saya%20mau%20" target="_blank" rel="noopener noreferrer" class="p-3 rounded-2xl brand-glass-badge border border-darkSurfaceBorder hover:border-brandYellow flex flex-col items-center justify-between text-center group cursor-pointer active:scale-95 transition-all">
+            <div class="w-14 h-12 flex items-center justify-center mb-1">
+              <img src="assets/logo/clean/keeway_transparent.png" alt="Logo Keeway" class="max-w-full max-h-full object-contain filter drop-shadow-md group-hover:scale-110 transition-transform" />
+            </div>
+            <span class="text-[10px] font-black text-zinc-300 group-hover:text-brandYellow uppercase tracking-tight">Keeway</span>
+          </a>
+
+          <!-- 6. Honda -->
+          <a href="https://wa.me/6282129082277?text=Halo%20Om%20Ei,%20saya%20ada%20motor%20Honda%20saya%20mau%20" target="_blank" rel="noopener noreferrer" class="p-3 rounded-2xl brand-glass-badge border border-darkSurfaceBorder hover:border-brandYellow flex flex-col items-center justify-between text-center group cursor-pointer active:scale-95 transition-all">
+            <div class="w-14 h-12 flex items-center justify-center mb-1">
+              <img src="assets/logo/clean/honda_transparent.png" alt="Logo Honda" class="max-w-full max-h-full object-contain filter drop-shadow-md group-hover:scale-110 transition-transform" />
+            </div>
+            <span class="text-[10px] font-black text-zinc-300 group-hover:text-brandYellow uppercase tracking-tight">Honda</span>
+          </a>
+
+          <!-- 7. Yamaha -->
+          <a href="https://wa.me/6282129082277?text=Halo%20Om%20Ei,%20saya%20ada%20motor%20Yamaha%20saya%20mau%20" target="_blank" rel="noopener noreferrer" class="p-3 rounded-2xl brand-glass-badge border border-darkSurfaceBorder hover:border-brandYellow flex flex-col items-center justify-between text-center group cursor-pointer active:scale-95 transition-all">
+            <div class="w-14 h-12 flex items-center justify-center mb-1">
+              <img src="assets/logo/clean/yamaha_transparent.png" alt="Logo Yamaha" class="max-w-full max-h-full object-contain filter drop-shadow-md group-hover:scale-110 transition-transform" />
+            </div>
+            <span class="text-[10px] font-black text-zinc-300 group-hover:text-brandYellow uppercase tracking-tight">Yamaha</span>
+          </a>
+
+          <!-- 8. Kawasaki -->
+          <a href="https://wa.me/6282129082277?text=Halo%20Om%20Ei,%20saya%20ada%20motor%20Kawasaki%20saya%20mau%20" target="_blank" rel="noopener noreferrer" class="p-3 rounded-2xl brand-glass-badge border border-darkSurfaceBorder hover:border-brandYellow flex flex-col items-center justify-between text-center group cursor-pointer active:scale-95 transition-all">
+            <div class="w-14 h-12 flex items-center justify-center mb-1">
+              <img src="assets/logo/clean/kawasaki_white.png" alt="Logo Kawasaki" class="max-w-full max-h-full object-contain filter drop-shadow-md group-hover:scale-110 transition-transform" />
+            </div>
+            <span class="text-[10px] font-black text-zinc-300 group-hover:text-brandYellow uppercase tracking-tight">Kawasaki</span>
+          </a>
+
+          <!-- 9. QJ Motor -->
+          <a href="https://wa.me/6282129082277?text=Halo%20Om%20Ei,%20saya%20ada%20motor%20QJ%20Motor%20saya%20mau%20" target="_blank" rel="noopener noreferrer" class="p-3 rounded-2xl brand-glass-badge border border-darkSurfaceBorder hover:border-brandYellow flex flex-col items-center justify-between text-center group cursor-pointer active:scale-95 transition-all">
+            <div class="w-14 h-12 flex items-center justify-center mb-1">
+              <img src="assets/logo/clean/qj_transparent.png" alt="Logo QJ Motor" class="max-w-full max-h-full object-contain filter drop-shadow-md group-hover:scale-110 transition-transform" />
+            </div>
+            <span class="text-[10px] font-black text-zinc-300 group-hover:text-brandYellow uppercase tracking-tight">QJ Motor</span>
+          </a>
+
+          <!-- 10. Morbidelli -->
+          <a href="https://wa.me/6282129082277?text=Halo%20Om%20Ei,%20saya%20ada%20motor%20Morbidelli%20saya%20mau%20" target="_blank" rel="noopener noreferrer" class="p-3 rounded-2xl brand-glass-badge border border-darkSurfaceBorder hover:border-brandYellow flex flex-col items-center justify-between text-center group cursor-pointer active:scale-95 transition-all">
+            <div class="w-14 h-12 flex items-center justify-center mb-1">
+              <img src="assets/logo/clean/morbidelli_white.png" alt="Logo Morbidelli" class="max-w-full max-h-full object-contain filter drop-shadow-md group-hover:scale-110 transition-transform" />
+            </div>
+            <span class="text-[10px] font-black text-zinc-300 group-hover:text-brandYellow uppercase tracking-tight">Morbidelli</span>
+          </a>
+
+          <!-- 11. TVS -->
+          <a href="https://wa.me/6282129082277?text=Halo%20Om%20Ei,%20saya%20ada%20motor%20TVS%20saya%20mau%20" target="_blank" rel="noopener noreferrer" class="p-3 rounded-2xl brand-glass-badge border border-darkSurfaceBorder hover:border-brandYellow flex flex-col items-center justify-between text-center group cursor-pointer active:scale-95 transition-all">
+            <div class="w-14 h-12 flex items-center justify-center mb-1">
+              <img src="assets/logo/clean/tvs_transparent.png" alt="Logo TVS" class="max-w-full max-h-full object-contain filter drop-shadow-md group-hover:scale-110 transition-transform" />
+            </div>
+            <span class="text-[10px] font-black text-zinc-300 group-hover:text-brandYellow uppercase tracking-tight">TVS</span>
+          </a>
+
+        </div>
+
+        <!-- 11 Brand Detailed Cards (Klik Kartu untuk Konsultasi WhatsApp per Merk) -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 mt-8">
+          
+          <!-- 1. Kaisar Ruby -->
+          <a href="https://wa.me/6282129082277?text=Halo%20Om%20Ei,%20saya%20ada%20motor%20Kaisar%20Ruby%20saya%20mau%20" target="_blank" rel="noopener noreferrer" class="p-6 rounded-2xl bg-darkElevated border border-darkSurfaceBorder hover:border-brandYellow card-transition flex flex-col justify-between group cursor-pointer active:scale-[0.98] transition-all block">
+            <div>
+              <div class="flex items-center gap-4 mb-4">
+                <div class="w-14 h-12 rounded-xl brand-glass-badge p-1.5 flex items-center justify-center shrink-0">
+                  <img src="assets/logo/clean/kaisar_transparent.png" alt="Logo Kaisar Ruby" class="max-w-full max-h-full object-contain group-hover:scale-110 transition-transform" />
+                </div>
+                <div>
+                  <h3 class="text-base font-black text-white group-hover:text-brandYellow transition-colors uppercase">Kaisar Ruby</h3>
+                  <span class="text-xs text-brandYellow font-extrabold">Spesialis Utama V250</span>
+                </div>
+              </div>
+              <p class="text-zinc-300 text-xs leading-relaxed">
+                Overhaul mesin V-Twin, sinkron karbu ganda, perbaikan kompresi bocor, custom knalpot dual pipa blar, dan sedia part langka Ruby.
+              </p>
+            </div>
+            <div class="mt-4 pt-3 border-t border-darkSurfaceBorder flex items-center justify-between text-xs text-zinc-400 group-hover:text-brandYellow transition-colors">
+              <span class="font-bold">Konsultasi WhatsApp</span>
+              <i class="ph-bold ph-whatsapp-logo text-base"></i>
+            </div>
+          </a>
+
+          <!-- 2. SM V16 -->
+          <a href="https://wa.me/6282129082277?text=Halo%20Om%20Ei,%20saya%20ada%20motor%20SM%20V16%20saya%20mau%20" target="_blank" rel="noopener noreferrer" class="p-6 rounded-2xl bg-darkElevated border border-darkSurfaceBorder hover:border-brandYellow card-transition flex flex-col justify-between group cursor-pointer active:scale-[0.98] transition-all block">
+            <div>
+              <div class="flex items-center gap-4 mb-4">
+                <div class="w-14 h-12 rounded-xl brand-glass-badge p-1.5 flex items-center justify-center shrink-0">
+                  <img src="assets/logo/clean/sm_transparent.png" alt="Logo SM V16" class="max-w-full max-h-full object-contain group-hover:scale-110 transition-transform" />
+                </div>
+                <div>
+                  <h3 class="text-base font-black text-white group-hover:text-brandYellow transition-colors uppercase">SM V16</h3>
+                  <span class="text-xs text-brandYellow font-extrabold">SM Motor Cruiser</span>
+                </div>
+              </div>
+              <p class="text-zinc-300 text-xs leading-relaxed">
+                Perawatan mesin injeksi/karbu V-Twin SM V16, drop seat custom, tangki peanut handmade, perapihan kelistrikan kabel tersembunyi.
+              </p>
+            </div>
+            <div class="mt-4 pt-3 border-t border-darkSurfaceBorder flex items-center justify-between text-xs text-zinc-400 group-hover:text-brandYellow transition-colors">
+              <span class="font-bold">Konsultasi WhatsApp</span>
+              <i class="ph-bold ph-whatsapp-logo text-base"></i>
+            </div>
+          </a>
+
+          <!-- 3. Benelli -->
+          <a href="https://wa.me/6282129082277?text=Halo%20Om%20Ei,%20saya%20ada%20motor%20Benelli%20saya%20mau%20" target="_blank" rel="noopener noreferrer" class="p-6 rounded-2xl bg-darkElevated border border-darkSurfaceBorder hover:border-brandYellow card-transition flex flex-col justify-between group cursor-pointer active:scale-[0.98] transition-all block">
+            <div>
+              <div class="flex items-center gap-4 mb-4">
+                <div class="w-14 h-12 rounded-xl brand-glass-badge p-1.5 flex items-center justify-center shrink-0">
+                  <img src="assets/logo/clean/benelli_transparent.png" alt="Logo Benelli" class="max-w-full max-h-full object-contain group-hover:scale-110 transition-transform" />
+                </div>
+                <div>
+                  <h3 class="text-base font-black text-white group-hover:text-brandYellow transition-colors uppercase">Benelli</h3>
+                  <span class="text-xs text-zinc-400 font-semibold">Motobi & Patagonian</span>
+                </div>
+              </div>
+              <p class="text-zinc-300 text-xs leading-relaxed">
+                Spesialis suara moge 2 silinder Patagonian Eagle & Motobi 200. Custom knalpot stereo padat, ganti stang, dan servis rutin berkala.
+              </p>
+            </div>
+            <div class="mt-4 pt-3 border-t border-darkSurfaceBorder flex items-center justify-between text-xs text-zinc-400 group-hover:text-brandYellow transition-colors">
+              <span class="font-bold">Konsultasi WhatsApp</span>
+              <i class="ph-bold ph-whatsapp-logo text-base"></i>
+            </div>
+          </a>
+
+          <!-- 4. Harley Davidson -->
+          <a href="https://wa.me/6282129082277?text=Halo%20Om%20Ei,%20saya%20ada%20motor%20Harley%20Davidson%20saya%20mau%20" target="_blank" rel="noopener noreferrer" class="p-6 rounded-2xl bg-darkElevated border border-darkSurfaceBorder hover:border-brandYellow card-transition flex flex-col justify-between group cursor-pointer active:scale-[0.98] transition-all block">
+            <div>
+              <div class="flex items-center gap-4 mb-4">
+                <div class="w-14 h-12 rounded-xl brand-glass-badge p-1.5 flex items-center justify-center shrink-0">
+                  <img src="assets/logo/clean/harley_transparent.png" alt="Logo Harley Davidson" class="max-w-full max-h-full object-contain group-hover:scale-110 transition-transform" />
+                </div>
+                <div>
+                  <h3 class="text-base font-black text-white group-hover:text-brandYellow transition-colors uppercase">Harley Davidson</h3>
+                  <span class="text-xs text-zinc-400 font-semibold">V-Twin Big Engine</span>
+                </div>
+              </div>
+              <p class="text-zinc-300 text-xs leading-relaxed">
+                Perawatan dan kustomisasi motor bermesin V-Twin besar: Sportster, Dyna, Softail, modifikasi stang tinggi (ape hanger), dan sissy bar.
+              </p>
+            </div>
+            <div class="mt-4 pt-3 border-t border-darkSurfaceBorder flex items-center justify-between text-xs text-zinc-400 group-hover:text-brandYellow transition-colors">
+              <span class="font-bold">Konsultasi WhatsApp</span>
+              <i class="ph-bold ph-whatsapp-logo text-base"></i>
+            </div>
+          </a>
+
+          <!-- 5. Keeway -->
+          <a href="https://wa.me/6282129082277?text=Halo%20Om%20Ei,%20saya%20ada%20motor%20Keeway%20saya%20mau%20" target="_blank" rel="noopener noreferrer" class="p-6 rounded-2xl bg-darkElevated border border-darkSurfaceBorder hover:border-brandYellow card-transition flex flex-col justify-between group cursor-pointer active:scale-[0.98] transition-all block">
+            <div>
+              <div class="flex items-center gap-4 mb-4">
+                <div class="w-14 h-12 rounded-xl brand-glass-badge p-1.5 flex items-center justify-center shrink-0">
+                  <img src="assets/logo/clean/keeway_transparent.png" alt="Logo Keeway" class="max-w-full max-h-full object-contain group-hover:scale-110 transition-transform" />
+                </div>
+                <div>
+                  <h3 class="text-base font-black text-white group-hover:text-brandYellow transition-colors uppercase">Keeway</h3>
+                  <span class="text-xs text-zinc-400 font-semibold">V250 & Gerda Series</span>
+                </div>
+              </div>
+              <p class="text-zinc-300 text-xs leading-relaxed">
+                Tune up mesin belt drive Keeway V250, custom spakbor belakang minimalis, ganti knalpot blar, dan setting injeksi harian.
+              </p>
+            </div>
+            <div class="mt-4 pt-3 border-t border-darkSurfaceBorder flex items-center justify-between text-xs text-zinc-400 group-hover:text-brandYellow transition-colors">
+              <span class="font-bold">Konsultasi WhatsApp</span>
+              <i class="ph-bold ph-whatsapp-logo text-base"></i>
+            </div>
+          </a>
+
+          <!-- 6. Honda -->
+          <a href="https://wa.me/6282129082277?text=Halo%20Om%20Ei,%20saya%20ada%20motor%20Honda%20saya%20mau%20" target="_blank" rel="noopener noreferrer" class="p-6 rounded-2xl bg-darkElevated border border-darkSurfaceBorder hover:border-brandYellow card-transition flex flex-col justify-between group cursor-pointer active:scale-[0.98] transition-all block">
+            <div>
+              <div class="flex items-center gap-4 mb-4">
+                <div class="w-14 h-12 rounded-xl brand-glass-badge p-1.5 flex items-center justify-center shrink-0">
+                  <img src="assets/logo/clean/honda_transparent.png" alt="Logo Honda" class="max-w-full max-h-full object-contain group-hover:scale-110 transition-transform" />
+                </div>
+                <div>
+                  <h3 class="text-base font-black text-white group-hover:text-brandYellow transition-colors uppercase">Honda</h3>
+                  <span class="text-xs text-zinc-400 font-semibold">Klasik, CB & Phantom</span>
+                </div>
+              </div>
+              <p class="text-zinc-300 text-xs leading-relaxed">
+                Bangun custom basis CB, Tiger, Mega Pro, Phantom cruiser, atau bebek klasik. Bikin rangka rigid chopper atau scrambler tangguh.
+              </p>
+            </div>
+            <div class="mt-4 pt-3 border-t border-darkSurfaceBorder flex items-center justify-between text-xs text-zinc-400 group-hover:text-brandYellow transition-colors">
+              <span class="font-bold">Konsultasi WhatsApp</span>
+              <i class="ph-bold ph-whatsapp-logo text-base"></i>
+            </div>
+          </a>
+
+          <!-- 7. Yamaha -->
+          <a href="https://wa.me/6282129082277?text=Halo%20Om%20Ei,%20saya%20ada%20motor%20Yamaha%20saya%20mau%20" target="_blank" rel="noopener noreferrer" class="p-6 rounded-2xl bg-darkElevated border border-darkSurfaceBorder hover:border-brandYellow card-transition flex flex-col justify-between group cursor-pointer active:scale-[0.98] transition-all block">
+            <div>
+              <div class="flex items-center gap-4 mb-4">
+                <div class="w-14 h-12 rounded-xl brand-glass-badge p-1.5 flex items-center justify-center shrink-0">
+                  <img src="assets/logo/clean/yamaha_transparent.png" alt="Logo Yamaha" class="max-w-full max-h-full object-contain group-hover:scale-110 transition-transform" />
+                </div>
+                <div>
+                  <h3 class="text-base font-black text-white group-hover:text-brandYellow transition-colors uppercase">Yamaha</h3>
+                  <span class="text-xs text-zinc-400 font-semibold">Scorpio, SR400 & Byson</span>
+                </div>
+              </div>
+              <p class="text-zinc-300 text-xs leading-relaxed">
+                Basis mesin favorit custom: Yamaha Scorpio 225 & Byson. Ubah jadi Chopper skinny, Bobber ban gambot, atau Bratstyle cafe racer.
+              </p>
+            </div>
+            <div class="mt-4 pt-3 border-t border-darkSurfaceBorder flex items-center justify-between text-xs text-zinc-400 group-hover:text-brandYellow transition-colors">
+              <span class="font-bold">Konsultasi WhatsApp</span>
+              <i class="ph-bold ph-whatsapp-logo text-base"></i>
+            </div>
+          </a>
+
+          <!-- 8. Kawasaki -->
+          <a href="https://wa.me/6282129082277?text=Halo%20Om%20Ei,%20saya%20ada%20motor%20Kawasaki%20saya%20mau%20" target="_blank" rel="noopener noreferrer" class="p-6 rounded-2xl bg-darkElevated border border-darkSurfaceBorder hover:border-brandYellow card-transition flex flex-col justify-between group cursor-pointer active:scale-[0.98] transition-all block">
+            <div>
+              <div class="flex items-center gap-4 mb-4">
+                <div class="w-14 h-12 rounded-xl brand-glass-badge p-1.5 flex items-center justify-center shrink-0">
+                  <img src="assets/logo/clean/kawasaki_white.png" alt="Logo Kawasaki" class="max-w-full max-h-full object-contain group-hover:scale-110 transition-transform" />
+                </div>
+                <div>
+                  <h3 class="text-base font-black text-white group-hover:text-brandYellow transition-colors uppercase">Kawasaki</h3>
+                  <span class="text-xs text-zinc-400 font-semibold">W175, Vulcan & Eliminator</span>
+                </div>
+              </div>
+              <p class="text-zinc-300 text-xs leading-relaxed">
+                Penyempurnaan karburator W175 yang sering brebet, modifikasi tangki, ganti jok kulit custom, dan servis berkala seri Vulcan.
+              </p>
+            </div>
+            <div class="mt-4 pt-3 border-t border-darkSurfaceBorder flex items-center justify-between text-xs text-zinc-400 group-hover:text-brandYellow transition-colors">
+              <span class="font-bold">Konsultasi WhatsApp</span>
+              <i class="ph-bold ph-whatsapp-logo text-base"></i>
+            </div>
+          </a>
+
+          <!-- 9. QJ Motor -->
+          <a href="https://wa.me/6282129082277?text=Halo%20Om%20Ei,%20saya%20ada%20motor%20QJ%20Motor%20saya%20mau%20" target="_blank" rel="noopener noreferrer" class="p-6 rounded-2xl bg-darkElevated border border-darkSurfaceBorder hover:border-brandYellow card-transition flex flex-col justify-between group cursor-pointer active:scale-[0.98] transition-all block">
+            <div>
+              <div class="flex items-center gap-4 mb-4">
+                <div class="w-14 h-12 rounded-xl brand-glass-badge p-1.5 flex items-center justify-center shrink-0">
+                  <img src="assets/logo/clean/qj_transparent.png" alt="Logo QJ Motor" class="max-w-full max-h-full object-contain group-hover:scale-110 transition-transform" />
+                </div>
+                <div>
+                  <h3 class="text-base font-black text-white group-hover:text-brandYellow transition-colors uppercase">QJ Motor</h3>
+                  <span class="text-xs text-zinc-400 font-semibold">SRV Series & Cruiser</span>
+                </div>
+              </div>
+              <p class="text-zinc-300 text-xs leading-relaxed">
+                Perawatan mesin modern V-Twin QJ Motor, custom posisi riding footstep maju (forward controls), dan upgrade peredam getaran.
+              </p>
+            </div>
+            <div class="mt-4 pt-3 border-t border-darkSurfaceBorder flex items-center justify-between text-xs text-zinc-400 group-hover:text-brandYellow transition-colors">
+              <span class="font-bold">Konsultasi WhatsApp</span>
+              <i class="ph-bold ph-whatsapp-logo text-base"></i>
+            </div>
+          </a>
+
+          <!-- 10. Morbidelli -->
+          <a href="https://wa.me/6282129082277?text=Halo%20Om%20Ei,%20saya%20ada%20motor%20Morbidelli%20saya%20mau%20" target="_blank" rel="noopener noreferrer" class="p-6 rounded-2xl bg-darkElevated border border-darkSurfaceBorder hover:border-brandYellow card-transition flex flex-col justify-between group cursor-pointer active:scale-[0.98] transition-all block">
+            <div>
+              <div class="flex items-center gap-4 mb-4">
+                <div class="w-14 h-12 rounded-xl brand-glass-badge p-1.5 flex items-center justify-center shrink-0">
+                  <img src="assets/logo/clean/morbidelli_white.png" alt="Logo Morbidelli" class="max-w-full max-h-full object-contain group-hover:scale-110 transition-transform" />
+                </div>
+                <div>
+                  <h3 class="text-base font-black text-white group-hover:text-brandYellow transition-colors uppercase">Morbidelli</h3>
+                  <span class="text-xs text-zinc-400 font-semibold">Cruiser MBP Series</span>
+                </div>
+              </div>
+              <p class="text-zinc-300 text-xs leading-relaxed">
+                Servis kelistrikan, setting kaki-kaki, tune up mesin V-Twin, dan penyesuaian aksesoris touring untuk kenyamanan jarak jauh.
+              </p>
+            </div>
+            <div class="mt-4 pt-3 border-t border-darkSurfaceBorder flex items-center justify-between text-xs text-zinc-400 group-hover:text-brandYellow transition-colors">
+              <span class="font-bold">Konsultasi WhatsApp</span>
+              <i class="ph-bold ph-whatsapp-logo text-base"></i>
+            </div>
+          </a>
+
+          <!-- 11. TVS -->
+          <a href="https://wa.me/6282129082277?text=Halo%20Om%20Ei,%20saya%20ada%20motor%20TVS%20saya%20mau%20" target="_blank" rel="noopener noreferrer" class="p-6 rounded-2xl bg-darkElevated border border-darkSurfaceBorder hover:border-brandYellow card-transition flex flex-col justify-between group cursor-pointer active:scale-[0.98] transition-all block">
+            <div>
+              <div class="flex items-center gap-4 mb-4">
+                <div class="w-14 h-12 rounded-xl brand-glass-badge p-1.5 flex items-center justify-center shrink-0">
+                  <img src="assets/logo/clean/tvs_transparent.png" alt="Logo TVS" class="max-w-full max-h-full object-contain group-hover:scale-110 transition-transform" />
+                </div>
+                <div>
+                  <h3 class="text-base font-black text-white group-hover:text-brandYellow transition-colors uppercase">TVS</h3>
+                  <span class="text-xs text-zinc-400 font-semibold">Ronin & Modern Retro</span>
+                </div>
+              </div>
+              <p class="text-zinc-300 text-xs leading-relaxed">
+                Custom retro scrambler basis TVS Ronin, custom bracket tas samping, knalpot stainless steel kustom, dan servis berkala.
+              </p>
+            </div>
+            <div class="mt-4 pt-3 border-t border-darkSurfaceBorder flex items-center justify-between text-xs text-zinc-400 group-hover:text-brandYellow transition-colors">
+              <span class="font-bold">Konsultasi WhatsApp</span>
+              <i class="ph-bold ph-whatsapp-logo text-base"></i>
+            </div>
+          </a>
+
+          <!-- 12. Card Punya Merk Lain -->
+          <a href="https://wa.me/6282129082277?text=Halo%20Om%20Ei,%20saya%20mau%20konsultasi%20untuk%20motor%20" target="_blank" rel="noopener noreferrer" class="p-6 rounded-2xl bg-brandYellow/10 border border-brandYellow/40 hover:border-brandYellow hover:bg-brandYellow/15 card-transition flex flex-col justify-between group cursor-pointer active:scale-[0.98] transition-all block">
+            <div>
+              <div class="w-10 h-10 rounded-xl bg-brandYellow text-black flex items-center justify-center text-2xl mb-3 group-hover:scale-105 transition-transform">
+                <i class="ph-bold ph-plus"></i>
+              </div>
+              <h3 class="text-base font-black text-white group-hover:text-brandYellow transition-colors uppercase">Punya Merk Lain?</h3>
+              <p class="text-zinc-300 text-xs mt-1 leading-relaxed">
+                Suzuki, Royal Enfield, Triumph, motor roda 3, atau motor klasik lainnya? Bawa ke workshop, kita bedah bareng!
+              </p>
+            </div>
+            <div class="mt-4 pt-3 border-t border-brandYellow/30 flex items-center justify-between text-xs font-bold text-brandYellow">
+              <span>Tanya Om Sekarang</span>
+              <i class="ph-bold ph-whatsapp-logo text-base"></i>
+            </div>
+          </a>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =================================================================== -->
+  <!-- 3. LAYANAN LENGKAP WORKSHOP                                         -->
+  <!-- =================================================================== -->
+  <section id="layanan" class="relative z-20 py-24 bg-darkBase border-b border-darkSurfaceBorder">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <span class="text-brandYellow text-xs font-black tracking-widest uppercase mb-2 block">Daftar Kemampuan Workshop</span>
+        <h2 class="text-3xl sm:text-4xl font-black font-heading text-white">
+          Layanan Lengkap Eiruby 71
+        </h2>
+        <p class="text-zinc-400 text-sm sm:text-base mt-2">
+          Dari servis tune up mesin, fabrikasi part manual, bangun motor custom dari nol, hingga cat mewah tahan bensin.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        
+        <!-- 1. Service & Tune Up -->
+        <div class="p-6 rounded-2xl bg-darkSurface border border-darkSurfaceBorder card-transition flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-brandYellow/15 text-brandYellow flex items-center justify-center text-2xl mb-4">
+              <i class="ph-bold ph-engine"></i>
+            </div>
+            <h3 class="text-lg font-bold font-heading text-white">Service & Tune Up</h3>
+            <p class="text-zinc-400 text-xs mt-2 leading-relaxed">
+              Servis berkala, overhaul total, sinkronisasi karbu ganda mesin V-Twin, perbaikan kompresi bocor, ganti oli, dan instalasi kelistrikan aman dari korslet.
+            </p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-darkSurfaceBorder text-[11px] text-brandYellow font-semibold">
+            Mesin Prima & Bertenaga
+          </div>
+        </div>
+
+        <!-- 2. Custom Modifikasi -->
+        <div class="p-6 rounded-2xl bg-darkSurface border border-darkSurfaceBorder card-transition flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-brandYellow/15 text-brandYellow flex items-center justify-center text-2xl mb-4">
+              <i class="ph-bold ph-fire"></i>
+            </div>
+            <h3 class="text-lg font-bold font-heading text-white">Custom Modifikasi</h3>
+            <p class="text-zinc-400 text-xs mt-2 leading-relaxed">
+              Membangun motor aliran Chopper, Bobber, Scrambler, Bratstyle, Cafe Racer, sasis rigid, stang Ape Hanger, dan knalpot custom dual blar.
+            </p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-darkSurfaceBorder text-[11px] text-brandYellow font-semibold">
+            Karakter Unik & Presisi
+          </div>
+        </div>
+
+        <!-- 3. Buat Part & Fabrikasi -->
+        <div class="p-6 rounded-2xl bg-darkSurface border border-darkSurfaceBorder card-transition flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-brandYellow/15 text-brandYellow flex items-center justify-center text-2xl mb-4">
+              <i class="ph-bold ph-gear-six"></i>
+            </div>
+            <h3 class="text-lg font-bold font-heading text-white">Buat Part & Fabrikasi</h3>
+            <p class="text-zinc-400 text-xs mt-2 leading-relaxed">
+              Fabrikasi manual part logam: bubut, bracket custom, tangki bensin handmade, sissy bar belakang jangkung, adapter gir, dan part yang sudah tidak diproduksi lagi.
+            </p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-darkSurfaceBorder text-[11px] text-brandYellow font-semibold">
+            Solusi Part Langka
+          </div>
+        </div>
+
+        <!-- 4. BIKIN MOTOR DARI NOL (HIGHLIGHT) -->
+        <div class="p-6 rounded-2xl bg-gradient-to-br from-amber-950/40 via-darkSurface to-darkSurface border-2 border-brandYellow/40 card-transition flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-brandYellow text-black flex items-center justify-center text-2xl mb-4 shadow-lg shadow-brandYellow/20">
+              <i class="ph-bold ph-hammer"></i>
+            </div>
+            <div class="inline-block px-2 py-0.5 rounded bg-brandYellow/20 text-brandYellow text-[10px] font-extrabold uppercase mb-1">Ground-Up Build</div>
+            <h3 class="text-lg font-bold font-heading text-white">Bikin Motor Dari Nol</h3>
+            <p class="text-zinc-300 text-xs mt-2 leading-relaxed">
+              Mulai dari merancang geometri sasis/rangka pipa, pasang mesin gelondongan, tangki kustom, kabel tersembunyi, hingga motor jadi utuh dan siap mengaspal.
+            </p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-darkSurfaceBorder text-[11px] text-brandYellow font-semibold">
+            100% Karya Eksklusif
+          </div>
+        </div>
+
+        <!-- 5. Painting & Finishing -->
+        <div class="p-6 rounded-2xl bg-darkSurface border border-darkSurfaceBorder card-transition flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-brandYellow/15 text-brandYellow flex items-center justify-center text-2xl mb-4">
+              <i class="ph-bold ph-paint-brush"></i>
+            </div>
+            <h3 class="text-lg font-bold font-heading text-white">Painting & Finishing</h3>
+            <p class="text-zinc-400 text-xs mt-2 leading-relaxed">
+              Pengecatan tangki, spakbor, dan rangka. Pilihan cat solid, metallic flake, candy tone berkelas, motif pinstripe klasik, dan finishing mengkilap tahan bensin.
+            </p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-darkSurfaceBorder text-[11px] text-brandYellow font-semibold">
+            Finishing Mewah
+          </div>
+        </div>
+
+        <!-- 6. Restorasi Motor -->
+        <div class="p-6 rounded-2xl bg-darkSurface border border-darkSurfaceBorder card-transition flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-brandYellow/15 text-brandYellow flex items-center justify-center text-2xl mb-4">
+              <i class="ph-bold ph-arrows-clockwise"></i>
+            </div>
+            <h3 class="text-lg font-bold font-heading text-white">Restorasi Motor</h3>
+            <p class="text-zinc-400 text-xs mt-2 leading-relaxed">
+              Menghidupkan kembali motor bahan yang sudah lama mati atau mangkrak. Restorasi original look atau retro modern siap touring jarak jauh.
+            </p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-darkSurfaceBorder text-[11px] text-brandYellow font-semibold">
+            Motor Tua Kembali Segar
+          </div>
+        </div>
+
+        <!-- 7. Konsultasi Konsep & Budget -->
+        <div class="p-6 rounded-2xl bg-darkSurface border border-darkSurfaceBorder card-transition flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-brandYellow/15 text-brandYellow flex items-center justify-center text-2xl mb-4">
+              <i class="ph-bold ph-chats-circle"></i>
+            </div>
+            <h3 class="text-lg font-bold font-heading text-white">Konsultasi Konsep</h3>
+            <p class="text-zinc-400 text-xs mt-2 leading-relaxed">
+              Sharing santai sebelum mulai garap. Diskusi desain referensi, part apa saja yang pas dengan budget kamu, tanpa biaya estimasi tersembunyi.
+            </p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-darkSurfaceBorder text-[11px] text-brandYellow font-semibold">
+            Bebas Diskusi di Workshop
+          </div>
+        </div>
+
+        <!-- 8. RESTORASI MOBIL TUA (OPSIONAL KECIL / SAMBINGAN) -->
+        <div class="p-6 rounded-2xl bg-darkSurface/70 border border-zinc-800 card-transition flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-zinc-800 text-zinc-300 flex items-center justify-center text-2xl mb-4">
+              <i class="ph-bold ph-car"></i>
+            </div>
+            <div class="inline-block px-2 py-0.5 rounded bg-zinc-800 text-zinc-400 text-[10px] font-bold uppercase mb-1">Layanan Sampingan</div>
+            <h3 class="text-lg font-bold font-heading text-white">Restorasi Mobil Tua</h3>
+            <p class="text-zinc-400 text-xs mt-2 leading-relaxed">
+              Sebagai layanan sampingan, om juga siap bantu perbaikan plat bodi keropos, cat ulang, dan penyegaran mesin mobil tua/klasik kesayanganmu.
+            </p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-darkSurfaceBorder text-[11px] text-zinc-400 font-medium">
+            Proyek Klasik Sampingan
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =================================================================== -->
+  <!-- 4. VIDEO & PORTOFOLIO WORKSHOP                                      -->
+  <!-- =================================================================== -->
+  <section id="video-porto" class="relative z-20 py-24 bg-darkBase border-b border-darkSurfaceBorder">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+        <div>
+          <span class="text-brandYellow text-xs font-black tracking-widest uppercase mb-2 block">Dokumentasi & Video</span>
+          <h2 class="text-3xl sm:text-4xl font-black font-heading text-white">
+            Suasana Bengkel & Portofolio
+          </h2>
+        </div>
+        <p class="text-zinc-400 text-sm max-w-md mt-4 md:mt-0">
+          Dokumentasi langsung dari workshop Eiruby 71 di Arcamanik Bandung.
+        </p>
+      </div>
+
+      <!-- Video Liputan Bengkel -->
+      <div class="rounded-3xl overflow-hidden bg-darkSurface border-2 border-brandYellow/40 p-6 sm:p-8 shadow-2xl glow-amber mb-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+          <div class="lg:col-span-7 rounded-2xl overflow-hidden aspect-video bg-black shadow-lg">
+            <iframe 
+              class="w-full h-full border-0" 
+              src="https://www.youtube.com/embed/IOFTMhKiFCM" 
+              title="Liputan Bengkel Kaisar Ruby & SM Sport V16 Bandung EIRUBY71" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+              allowfullscreen>
+            </iframe>
+          </div>
+          <div class="lg:col-span-5 space-y-4">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-red-600/20 border border-red-500/40 text-red-400 text-xs font-bold uppercase">
+              <i class="ph-fill ph-video text-base"></i> Video Liputan Workshop
+            </div>
+            <h3 class="text-2xl font-black font-heading text-white leading-tight">
+              Bedah Garasi Eiruby 71: Spesialis Kaisar Ruby & Moge Bandung
+            </h3>
+            <p class="text-sm text-zinc-300 leading-relaxed">
+              Tonton langsung suasana pengerjaan motor di workshop Eiruby 71 Arcamanik Bandung. Review mesin V-Twin, setting suara knalpot, dan sharing perawatan motor custom.
+            </p>
+            <div class="pt-2">
+              <a href="https://www.youtube.com/watch?v=IOFTMhKiFCM" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 bg-gradient-to-r from-brandYellow to-brandOrange text-black font-extrabold px-5 py-2.5 rounded-xl text-xs shadow-md hover:brightness-110 transition-all">
+                <i class="ph-bold ph-arrow-square-out text-sm"></i>
+                <span>Buka di Aplikasi YouTube</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Portfolio Grid Cards -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        
+        <!-- Porto 1 -->
+        <div class="rounded-2xl overflow-hidden bg-darkSurface border border-darkSurfaceBorder card-transition group">
+          <div class="h-60 bg-zinc-900 flex items-center justify-center relative overflow-hidden">
+            <div class="text-center p-6">
+              <i class="ph-bold ph-motorcycle text-5xl text-brandYellow/60 mb-2"></i>
+              <span class="text-xs uppercase font-extrabold text-zinc-400 block">Kaisar Ruby V250</span>
+            </div>
+            <div class="absolute inset-0 bg-gradient-to-t from-darkSurface via-transparent to-transparent opacity-80"></div>
+          </div>
+          <div class="p-5">
+            <span class="text-[10px] font-black text-brandYellow uppercase tracking-wider">Custom Cruiser</span>
+            <h4 class="text-base font-bold text-white mt-1 group-hover:text-brandYellow transition-colors">Kaisar Ruby V250 American Style</h4>
+            <p class="text-zinc-400 text-xs mt-1.5">Overhaul mesin V-Twin, knalpot dual pipa custom blar, dan setting karbu sincron.</p>
+          </div>
+        </div>
+
+        <!-- Porto 2 -->
+        <div class="rounded-2xl overflow-hidden bg-darkSurface border border-darkSurfaceBorder card-transition group">
+          <div class="h-60 bg-zinc-900 flex items-center justify-center relative overflow-hidden">
+            <div class="text-center p-6">
+              <i class="ph-bold ph-fire text-5xl text-amber-500/60 mb-2"></i>
+              <span class="text-xs uppercase font-extrabold text-zinc-400 block">SM Sport V16</span>
+            </div>
+            <div class="absolute inset-0 bg-gradient-to-t from-darkSurface via-transparent to-transparent opacity-80"></div>
+          </div>
+          <div class="p-5">
+            <span class="text-[10px] font-black text-brandYellow uppercase tracking-wider">Chopper Build</span>
+            <h4 class="text-base font-bold text-white mt-1 group-hover:text-brandYellow transition-colors">SM V16 Skinny Chopper</h4>
+            <p class="text-zinc-400 text-xs mt-1.5">Rangka custom drop seat, tangki peanut handmade, sissy bar jangkung.</p>
+          </div>
+        </div>
+
+        <!-- Porto 3 -->
+        <div class="rounded-2xl overflow-hidden bg-darkSurface border border-darkSurfaceBorder card-transition group">
+          <div class="h-60 bg-zinc-900 flex items-center justify-center relative overflow-hidden">
+            <div class="text-center p-6">
+              <i class="ph-bold ph-car text-5xl text-zinc-500 mb-2"></i>
+              <span class="text-xs uppercase font-extrabold text-zinc-400 block">Restorasi Sampingan</span>
+            </div>
+            <div class="absolute inset-0 bg-gradient-to-t from-darkSurface via-transparent to-transparent opacity-80"></div>
+          </div>
+          <div class="p-5">
+            <span class="text-[10px] font-bold text-zinc-400 uppercase tracking-wider">Mobil Tua / Klasik</span>
+            <h4 class="text-base font-bold text-white mt-1 group-hover:text-brandYellow transition-colors">Restorasi Bodi & Mesin Mobil Tua</h4>
+            <p class="text-zinc-400 text-xs mt-1.5">Perbaikan plat keropos, repaint total, dan penataan kelistrikan mobil klasik.</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =================================================================== -->
+  <!-- 5. LOKASI WORKSHOP & GOOGLE MAPS                                    -->
+  <!-- =================================================================== -->
+  <section id="lokasi" class="relative z-20 py-24 bg-darkBase border-b border-darkSurfaceBorder">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+        
+        <!-- Info Kontak & Lokasi -->
+        <div class="lg:col-span-5 space-y-6">
+          <span class="text-brandYellow text-xs font-black tracking-widest uppercase block">Workshop Arcamanik</span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold font-heading text-white">
+            Silaturahmi ke Bengkel Eiruby 71
+          </h2>
+          <p class="text-zinc-400 text-sm leading-relaxed">
+            Semua pengerjaan difokuskan langsung di workshop garasi kami dengan peralatan lengkap, presisi, dan teliti. Silakan bawa kendaraanmu untuk kami cek langsung!
+          </p>
+
+          <div class="space-y-4 pt-2">
+            <!-- Box Alamat -->
+            <div class="p-4 rounded-2xl bg-darkSurface border border-darkSurfaceBorder flex items-start gap-4">
+              <div class="w-10 h-10 rounded-xl bg-brandYellow/15 text-brandYellow flex items-center justify-center shrink-0">
+                <i class="ph-bold ph-map-pin text-xl"></i>
+              </div>
+              <div>
+                <h4 class="text-sm font-bold text-white">Alamat Workshop</h4>
+                <p class="text-xs text-zinc-400 mt-1 leading-relaxed">
+                  Jl. Golf 1 No.94, Bina Harapan, RT.2/RW.11, Cisaranten Kulon, Kec. Arcamanik, Kota Bandung, Jawa Barat 40293
+                </p>
+                <a href="https://maps.app.goo.gl/2Pm4iFiLnGr9CPDc9" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-xs text-brandYellow font-bold mt-2 hover:underline">
+                  <span>Petunjuk Arah Google Maps</span>
+                  <i class="ph-bold ph-arrow-square-out"></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- Box Jam Buka -->
+            <div class="p-4 rounded-2xl bg-darkSurface border border-darkSurfaceBorder flex items-start gap-4">
+              <div class="w-10 h-10 rounded-xl bg-brandYellow/15 text-brandYellow flex items-center justify-center shrink-0">
+                <i class="ph-bold ph-clock text-xl"></i>
+              </div>
+              <div>
+                <h4 class="text-sm font-bold text-white">Jam Operasional</h4>
+                <p class="text-xs text-zinc-400 mt-1">Senin – Minggu: 08.00 – 18.00 WIB</p>
+                <p class="text-[11px] text-zinc-500 mt-0.5">Konfirmasi via WhatsApp sebelum datang agar om bisa siapkan slot pengerjaan.</p>
+              </div>
+            </div>
+
+            <!-- Box WhatsApp -->
+            <div class="p-4 rounded-2xl bg-darkSurface border border-darkSurfaceBorder flex items-start gap-4">
+              <div class="w-10 h-10 rounded-xl bg-brandYellow/15 text-brandYellow flex items-center justify-center shrink-0">
+                <i class="ph-bold ph-phone text-xl"></i>
+              </div>
+              <div>
+                <h4 class="text-sm font-bold text-white">Kontak WhatsApp</h4>
+                <p class="text-xs text-zinc-400 mt-1">0821-2908-2277</p>
+                <a href="https://wa.me/6282129082277?text=Halo%20Om%20Eiruby71,%20saya%20mau%20ke%20workshop" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-xs text-brandYellow font-bold mt-2 hover:underline">
+                  <span>Chat WhatsApp Langsung</span>
+                  <i class="ph-bold ph-whatsapp-logo"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Google Maps Iframe -->
+        <div class="lg:col-span-7">
+          <div class="w-full h-[420px] rounded-3xl overflow-hidden border border-darkSurfaceBorder bg-darkSurface shadow-2xl relative">
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.771966215163!2d107.6862304!3d-6.9135082!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68dd0953751579%3A0xe1018796050b6abb!2sEiruby71!5e0!3m2!1sid!2sid!4v1700000000000!5m2!1sid!2sid" 
+              class="w-full h-full border-0" 
+              allowfullscreen="" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+            
+            <div class="absolute bottom-4 left-4 right-4 bg-darkBase/95 backdrop-blur-md p-3.5 rounded-2xl border border-darkSurfaceBorder flex items-center justify-between">
+              <div class="flex items-center gap-2">
+                <i class="ph-fill ph-map-pin text-brandYellow text-lg"></i>
+                <span class="text-xs font-semibold text-white">Eiruby 71 • Arcamanik, Bandung</span>
+              </div>
+              <a href="https://maps.app.goo.gl/2Pm4iFiLnGr9CPDc9" target="_blank" rel="noopener noreferrer" class="bg-brandYellow text-black text-xs font-bold px-3 py-1.5 rounded-xl hover:brightness-110 transition-all">
+                Navigasi Maps
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="relative z-20 py-10 border-t border-darkSurfaceBorder bg-black text-zinc-500 text-xs">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div class="flex items-center gap-2">
+        <span class="font-extrabold text-white font-classic">ruby<span class="text-brandYellow font-heading">71</span></span>
+        <span class="text-zinc-600">|</span>
+        <span>Bengkel Custom, Fabrikasi & Servis Cruiser Bandung</span>
+      </div>
+      <div>
+        © 2026 Ei ruby 71 MOTORCYCLE • Jl. Golf 1 No.94, Cisaranten Kulon Bandung
+      </div>
+    </div>
+  </footer>
+
+  <!-- FLOATING QUICK WHATSAPP BUTTON -->
+  <a href="https://wa.me/6282129082277?text=Halo%20Om%20Eiruby71,%20saya%20lihat%20dari%20website%20dan%20mau%20tanya-tanya" target="_blank" rel="noopener noreferrer" class="fixed bottom-6 right-6 z-50 flex items-center gap-2.5 bg-[#25D366] hover:bg-[#20ba59] text-white font-bold px-4 py-3 rounded-full shadow-2xl hover:scale-105 active:scale-95 transition-all group" aria-label="Chat WhatsApp Om">
+    <i class="ph-fill ph-whatsapp-logo text-2xl"></i>
+    <span class="hidden sm:inline text-sm font-bold">Chat Om Eiruby71</span>
+  </a>
+
+  <!-- SCRIPTS -->
+  <script>
+    // 1. Mobile Drawer Navigation
+    const toggle = document.getElementById('mobileToggle');
+    const drawer = document.getElementById('mobileDrawer');
+
+    if (toggle && drawer) {
+      toggle.addEventListener('click', () => {
+        drawer.classList.toggle('hidden');
+      });
+
+      drawer.querySelectorAll('a').forEach(l => {
+        l.addEventListener('click', () => {
+          drawer.classList.add('hidden');
+        });
+      });
+    }
+
+    // 2. Interactive Receding Parallax Background ("Bannernya mundur ke belakang jadi transparan")
+    const bannerImg = document.getElementById('interactive-banner-img');
+    const bannerOverlay = document.getElementById('interactive-banner-overlay');
+    const scrollPrompt = document.getElementById('scroll-prompt');
+
+    function updateParallax() {
+      const scrollY = window.pageYOffset || document.documentElement.scrollTop;
+      const vh = window.innerHeight || 800;
+      
+      // Calculate scroll progress through the first viewport (0 at top, 1 when scrolled 100vh)
+      const progress = Math.min(Math.max(scrollY / vh, 0), 1);
+      
+      if (bannerImg) {
+        // Mundur ke belakang: scale down dari 1.0 ke 0.88 & translasi halus
+        const scale = 1 - (progress * 0.12);
+        const blur = progress * 5; // Efek bokeh halus depth-of-field
+        bannerImg.style.transform = `scale(${scale.toFixed(3)}) translateY(${(progress * 25).toFixed(1)}px)`;
+        bannerImg.style.filter = blur > 0.1 ? `blur(${blur.toFixed(1)}px)` : 'none';
+      }
+      
+      if (bannerOverlay) {
+        // Menjadi transparan/gelap mundur ke belakang (fade dark overlay dari 0 ke 0.88)
+        bannerOverlay.style.opacity = (progress * 0.88).toFixed(3);
+      }
+      
+      if (scrollPrompt) {
+        // Scroll prompt memudar begitu user mulai scroll
+        const promptOpacity = Math.max(0, 1 - (scrollY / 160));
+        scrollPrompt.style.opacity = promptOpacity.toFixed(3);
+        scrollPrompt.style.pointerEvents = promptOpacity <= 0.05 ? 'none' : 'auto';
+      }
+    }
+
+    window.addEventListener('scroll', updateParallax, { passive: true });
+    // Inisialisasi awal saat halaman dibuka
+    updateParallax();
+  </script>
+</body>
+</html>
